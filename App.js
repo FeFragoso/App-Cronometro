@@ -3,12 +3,14 @@ import EStyleSheet from 'react-native-extended-stylesheet'
 
 export default function App() {
   return (
-    <View>
-      
+    <View style={s.container}>
+
     </View>
   )
 }
 
 const s = EStyleSheet.create({
-
+  container: {
+    
+  }
 })
