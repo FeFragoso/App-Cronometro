@@ -7,12 +7,16 @@ export default function App() {
   return (
     <View style={s.container}>
       
-      <Image
-        style={s.img}
-        source={require('./assets/crono.png')}
-      />
+      <View style={s.timerArea}>
 
-      <Text style={s.timer}>00:00:00</Text>
+        <Image
+          style={s.img}
+          source={require('./assets/crono.png')}
+        />
+
+        <Text style={s.timer}>00:00:00</Text>
+
+      </View>
 
       <View style={s.btnArea}>
 
@@ -38,6 +42,10 @@ const s = EStyleSheet.create({
 
     backgroundColor: '#00aeef'
   },
+  timerArea: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   img: {
     resizeMode: 'contain',
 
@@ -47,7 +55,34 @@ const s = EStyleSheet.create({
   timer: {
     position: 'absolute',
 
+    top: '47.5%',
+
     fontSize: '2.75rem',
+    fontWeight: 'bold',
+
+    color: '#E67700'
+  },
+  btnArea: {
+    marginTop: '7rem',
+
+    width: '100%',
+
+    flexDirection: 'row',
+    justifyContent: 'space-around'
+  },
+  btn: {
+    width: '25%',
+    height: '4rem',
+
+    justifyContent: 'center',
+    alignItems: 'center',
+
+    backgroundColor: '#E67700',
+
+    borderRadius: 20
+  },
+  btnTexto: {
+    fontSize: '1.5rem',
     fontWeight: 'bold',
 
     color: '#fff'
