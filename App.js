@@ -18,6 +18,8 @@ export default function App() {
 
       </View>
 
+      <Text style={s.ultimoTimer}>Último tempo: 00:03:47</Text>
+
       <View style={s.btnArea}>
 
         <TouchableOpacity style={s.btn}>
@@ -62,8 +64,16 @@ const s = EStyleSheet.create({
 
     color: '#E67700'
   },
+  ultimoTimer: {
+    marginTop: '2rem',
+
+    fontSize: '1.25rem',
+    fontWeight: 'bold',
+
+    color: '#fff'
+  },
   btnArea: {
-    marginTop: '7rem',
+    marginTop: '5rem',
 
     width: '100%',
 
